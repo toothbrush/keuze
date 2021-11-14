@@ -38,6 +38,18 @@ class InputField: NSTextField, NSTextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func keyUp(with event: NSEvent) {
+        if event.modifierFlags.contains(.control)
+            && event.charactersIgnoringModifiers == "c" {
+            appDelegate.cancel()
+        }
+        if event.modifierFlags.contains(.control)
+            && event.charactersIgnoringModifiers == "g" {
+            appDelegate.cancel()
+        }
+        super.keyUp(with: event)
+    }
+
     func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
         if (commandSelector == #selector(NSStandardKeyBindingResponding.cancelOperation(_:))){
             appDelegate.cancel()
