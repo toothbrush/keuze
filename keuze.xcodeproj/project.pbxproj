@@ -37,8 +37,6 @@
 		90EB57CD225B83CB002E81D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		90EB57CF225B8742002E81D7 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		EF3CE234203361F2000CAD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF3CE235203361F2000CAD87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF860B222034C4D50087C40D /* head.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = head.h; sourceTree = "<group>"; };
 		EFEAA7E6203393C200FB0263 /* keuze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = keuze; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				EF3CE234203361F2000CAD87 /* Info.plist */,
-				EF3CE235203361F2000CAD87 /* main.m */,
-				EF860B222034C4D50087C40D /* head.h */,
 				90537626225B8EDA003B4D25 /* main.swift */,
 				90EB57CF225B8742002E81D7 /* Window.swift */,
 				90537620225B89E2003B4D25 /* constants.swift */,
