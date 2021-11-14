@@ -21,14 +21,13 @@ class DataSource: NSObject, NSTableViewDataSource {
     }
     
     func updateSort(query: String) {
-        for item in items {
-            let match = item.lowercased().longestCommonSubsequence(query.lowercased())
-            matches[item] = match
-            scores[item] = Float(match.count) / Float(query.count)
+        if query.isEmpty {
+            sortedItems = items
+            return
         }
 
-        sortedItems = items.sorted(by: { (a, b) -> Bool in
-            scores[a]! > scores[b]!
+        sortedItems = items.filter({ itm in
+            itm.lowercased().contains(query.lowercased())
         })
     }
     
